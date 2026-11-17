@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loomey's Toys | SEO Audit: Google Maps, AI &amp; Website</title>
+<meta name="description" content="Loomey's Toys local SEO audit: Google Maps rankings, AI search visibility and website fixes for the Laguna Beach and Palisades Village stores.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Loomey's Toys | SEO Audit">
+<meta property="og:description" content="Google Maps rankings, AI search visibility and website fixes for Loomey's Toys.">
+<meta property="og:url" content="https://shamanlo.github.io/loomeys-toys-audit/">
+<meta property="og:image" content="https://shamanlo.github.io/loomeys-toys-audit/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://shamanlo.github.io/loomeys-toys-audit/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500;600;700;800&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{
+  --navy:#2c3e57; --navy2:#3a5070; --gold:#e8b347; --gold-soft:rgba(232,179,71,.16);
+  --cream:#f3eee6; --paper:#fffdf9; --mint:#dce7e2; --blush:#f9eef8; --dolphin:#8aa9cf; --dolphin-soft:rgba(138,169,207,.18);
+  --text:#2c3e57; --muted:#5f6f84; --dim:#8a96a6; --line:#e6ddcf;
+  --top3:#16a34a; --mid:#f59e0b; --na:#ef4444; --red:#d9534f;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--text);font-family:Jost,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-family:Grandstander,Jost,sans-serif;font-weight:700;letter-spacing:.01em}
+
+.topbar{background:var(--navy);color:#fff;font-size:13px;font-weight:500;text-align:center;padding:7px 16px;letter-spacing:.04em}
+.topbar i{color:var(--gold)}
+header.nav{position:sticky;top:0;z-index:40;background:rgba(255,253,249,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+.nav img{height:58px;width:auto}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{text-decoration:none;font-size:15px;font-weight:500;color:var(--muted);padding:8px 12px;border-radius:999px;transition:.2s}
+.nav-links a:hover{color:var(--navy);background:var(--cream)}
+.nav-links a.cta{background:var(--gold);color:var(--navy);font-weight:700}
+.nav-links a.cta:hover{background:#f0c264}
+
+.hero{position:relative;padding:64px 0 40px;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-30% -20% auto;height:560px;background:radial-gradient(closest-side,var(--dolphin-soft),transparent 70%);pointer-events:none}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(44,62,87,.15);background:var(--paper);color:var(--navy);font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:7px 15px;border-radius:999px}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+h1{font-size:clamp(36px,5.6vw,64px);line-height:1.04;margin:20px auto 14px;max-width:900px;color:var(--navy)}
+h1 .g{color:var(--dolphin)}
+.hero p.sub{color:var(--muted);font-size:clamp(16px,2vw,19px);max-width:700px;margin:0 auto;font-weight:400}
+.hero-meta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--muted)}
+.hero-meta span{background:var(--paper);border:1px solid var(--line);padding:6px 13px;border-radius:999px}
+.hero-meta i{color:var(--dolphin);margin-right:6px}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px;text-align:left}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;position:relative;overflow:hidden}
+.kpi::after{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--gold)}
+.kpi.blue::after{background:var(--dolphin)}
+.kpi i{color:var(--dolphin);font-size:16px}
+.kpi .v{font-family:Grandstander,sans-serif;font-size:36px;font-weight:700;line-height:1.05;margin-top:8px;font-variant-numeric:tabular-nums}
+.kpi .l{color:var(--muted);font-size:14px;margin-top:2px}
+
+section.block{padding:68px 0;border-top:1px solid var(--line)}
+section.alt{background:var(--paper)}
+.label{display:flex;align-items:center;gap:8px;color:var(--dolphin);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.label i{color:var(--gold)}
+h2{font-size:clamp(28px,4vw,42px);line-height:1.08;margin:10px 0 12px;color:var(--navy)}
+.lead{color:var(--muted);max-width:780px;font-size:17px}
+.lead b{color:var(--navy)}
+.divider{height:4px;width:72px;background:var(--gold);border-radius:4px;margin:22px 0 30px}
+
+/* video */
+.vid-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:26px;align-items:start}
+.vid{background:#000;border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 50px -28px rgba(44,62,87,.55);border:1px solid var(--line)}
+.vid video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.takeaways{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.takeaways h3{font-size:20px;margin-bottom:12px}
+.takeaways ul{list-style:none;display:grid;gap:11px;font-size:15.5px}
+.takeaways li{display:flex;gap:10px}
+.takeaways li i{margin-top:5px;width:16px;flex-shrink:0}
+.ok{color:var(--top3)} .warn{color:var(--mid)} .bad{color:var(--red)}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;color:var(--muted);margin-bottom:22px}
+.legend b{color:var(--navy)}
+.sw{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:7px;vertical-align:-2px}
+
+/* profile */
+.gbp{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;margin-bottom:30px}
+.gbp-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:14px}
+.gbp-head{display:flex;gap:14px;align-items:center}
+.gbp-head>i{font-size:22px;color:var(--navy);width:50px;height:50px;border-radius:14px;background:var(--gold-soft);display:grid;place-items:center;flex-shrink:0}
+.gbp-head h3{font-size:20px}
+.gbp-head small{color:var(--muted);font-size:14px}
+.gbp-rating{display:flex;align-items:center;gap:10px;font-size:14.5px;color:var(--muted)}
+.gbp-rating b{font-family:Grandstander,sans-serif;font-size:28px;color:var(--navy)}
+.stars{color:#fbbc04;letter-spacing:2px;font-size:16px}
+.gbp-card ul{list-style:none;display:grid;gap:8px;font-size:15px}
+.gbp-card li{display:flex;gap:10px}
+.gbp-card li i{color:var(--dolphin);width:16px;margin-top:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;text-decoration:none;font-weight:700;font-size:14.5px;color:var(--navy);background:var(--gold);padding:9px 15px;border-radius:999px}
+.btn:hover{background:#f0c264}
+.btn.ghost{background:transparent;border:1.5px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
+.panel h4{font-size:18px;margin-bottom:12px}
+.row{display:grid;grid-template-columns:minmax(0,190px) 1fr 70px;gap:10px;align-items:center;font-size:14px;margin-bottom:9px}
+.row .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .track{height:9px;border-radius:9px;background:var(--cream);border:1px solid var(--line);overflow:hidden}
+.row .track span{display:block;height:100%;background:var(--dolphin);border-radius:9px}
+.row .n{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.row.me{font-weight:700;color:var(--navy)}
+.row.me .track span{background:var(--gold)}
+.row.me .n{color:var(--navy)}
+.note{font-size:13px;color:var(--dim);margin-top:10px}
+
+/* map cards */
+.subhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:40px 0 16px;padding-bottom:12px;border-bottom:1.5px dashed var(--line)}
+.subhead h3{font-size:22px}
+.subhead h3 i{color:var(--gold);margin-right:8px}
+.subhead p{color:var(--muted);font-size:14.5px}
+.maps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:0 18px 36px -24px rgba(44,62,87,.5)}
+.shot{position:relative;aspect-ratio:1000/919;overflow:hidden;cursor:zoom-in;background:#e9eef2;border:0;padding:0;display:block;width:100%}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.shot:hover img{transform:scale(1.03)}
+.shot .tag{position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:7px;background:rgba(44,62,87,.88);color:#fff}
+.mbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.mtitle{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.mtitle h3{font-family:Jost,sans-serif;font-size:16.5px;font-weight:600;line-height:1.3}
+.badge{flex-shrink:0;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:4px 9px;border-radius:999px;background:#dcf3e3;color:#11642f}
+.badge.mid{background:#fdf0d5;color:#8a5a00}
+.badge.bad{background:#fbe1e0;color:#9b2c2a}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{background:var(--cream);border-radius:10px;padding:8px 10px}
+.stat .v{font-family:Grandstander,sans-serif;font-weight:700;font-size:20px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .v small{font-size:12px;color:var(--muted);font-family:Jost,sans-serif}
+.stat .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.bar{height:8px;border-radius:8px;background:var(--cream);overflow:hidden;display:flex}
+.bar span{display:block;height:100%}
+.leader{font-size:13px;color:var(--muted)}
+.leader b{color:var(--navy);font-weight:600}
+
+/* tips */
+.tips{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.tip{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;display:flex;gap:16px}
+.tip .n{font-family:Grandstander,sans-serif;font-size:15px;font-weight:700;color:var(--navy);background:var(--gold);min-width:34px;height:34px;border-radius:50%;display:grid;place-items:center}
+.tip h4{font-size:17px;margin-bottom:4px}
+.tip p{color:var(--muted);font-size:15px}
+.tip p b{color:var(--navy);font-weight:600}
+.prio{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:2px;background:var(--dolphin-soft);color:var(--navy)}
+.prio.hi{background:var(--gold-soft);color:#8a5a00}
+
+/* ai */
+.aiv-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.aiv{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.aiv .v{font-family:Grandstander,sans-serif;font-size:34px;font-weight:700;line-height:1.05;color:var(--navy)}
+.aiv .v small{font-size:16px;color:var(--muted)}
+.aiv .l{font-size:14px;font-weight:600;margin-top:4px}
+.aiv .l small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.tbl-wrap{overflow-x:auto;margin:0 -4px}
+table.t{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+.t th{text-align:center;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;padding:8px 6px;border-bottom:1px solid var(--line)}
+.t th:first-child{text-align:left}
+.t td{padding:10px 6px;border-bottom:1px solid var(--line);text-align:center;vertical-align:top}
+.t td:first-child{text-align:left;max-width:380px}
+.t td:last-child{font-weight:700}
+.chip{display:inline-block;min-width:34px;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--dim);font-size:12px}
+.chip.hit{background:#dcf3e3;border-color:#b5e2c3;color:#11642f;font-weight:700}
+.chip.cite{background:var(--top3);border-color:var(--top3);color:#fff;font-weight:700}
+.zero{color:var(--red)}
+
+/* website checklist */
+.checks{display:grid;gap:12px}
+.check{display:grid;grid-template-columns:28px 1fr 1.2fr;gap:14px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.check>i{font-size:18px;margin-top:3px}
+.check h4{font-family:Jost,sans-serif;font-weight:600;font-size:16px}
+.check .now{font-size:14px;color:var(--muted)}
+.check code{font-size:13px;background:var(--cream);padding:1px 6px;border-radius:5px}
+.check .fix{font-size:14.5px;color:var(--navy)}
+.check .fix b{color:#8a5a00}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(20,28,40,.88);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-inner{width:min(94vh,980px,100%)}
+.modal-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:12px;color:#fff}
+.modal-title h3{font-size:19px}
+.modal-close{background:var(--paper);border:0;color:var(--navy);width:40px;height:40px;border-radius:12px;cursor:pointer;font-size:18px;flex-shrink:0}
+.modal img{border-radius:12px;max-height:84vh;margin:0 auto}
+
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--dim);font-size:13.5px;background:var(--paper)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer img{height:50px;width:auto}
+
+@media (max-width:1000px){.maps{grid-template-columns:repeat(2,1fr)}.vid-grid,.gbp{grid-template-columns:1fr}.kpis,.aiv-kpis{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.two,.tips{grid-template-columns:1fr}.check{grid-template-columns:24px 1fr}.check .fix{grid-column:2}}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .nav-links a:not(.cta){display:none}
+  .nav img{height:46px}
+  .maps{grid-template-columns:1fr}
+  section.block{padding:50px 0}
+  .row{grid-template-columns:minmax(0,130px) 1fr 56px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><i class="fa-solid fa-magnifying-glass-chart"></i>&nbsp; Loomey's Toys · SEO Audit · November 2026</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" aria-label="Loomey's Toys"><img src="img/loomeys-logo.png" alt="Loomey's Toys" width="600" height="323"></a>
+    <nav class="nav-links">
+      <a href="#video">Video</a>
+      <a href="#maps">Google Maps</a>
+      <a href="#ai">AI Search</a>
+      <a href="#website" class="cta">Website Tips</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap" style="position:relative">
+      <span class="pill"><span class="dot"></span> Local SEO Audit</span>
+      <h1>Google Maps, AI Search <span class="g">&amp;</span> Website</h1>
+      <p class="sub">Where Loomey's Toys shows up today when families search for toys and gifts, who's showing up instead, and the fixes that close the gaps.</p>
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-location-dot"></i>381 Forest Ave, Laguna Beach</span>
+        <span><i class="fa-solid fa-store"></i>Palisades Village reopening</span>
+        <span><i class="fa-solid fa-calendar"></i>Scanned Nov 16–17, 2026</span>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><i class="fa-solid fa-map-location-dot"></i><div class="v">6 / 12</div><div class="l">Maps keywords in the top 3 across Orange County</div></div>
+        <div class="kpi"><i class="fa-solid fa-ban"></i><div class="v">2 / 12</div><div class="l">Maps keywords not ranking anywhere</div></div>
+        <div class="kpi blue"><i class="fa-solid fa-wand-magic-sparkles"></i><div class="v">38%</div><div class="l">of AI answers name Loomey's</div></div>
+        <div class="kpi blue"><i class="fa-solid fa-camera"></i><div class="v">13</div><div class="l">profile photos, vs. 69–365 for the toy stores outranking it</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="video">
+    <div class="wrap">
+      <div class="label"><i class="fa-solid fa-circle-play"></i> Watch first</div>
+      <h2>Audit walkthrough</h2>
+      <p class="lead">A short walkthrough of the findings below.</p>
+      <div class="divider"></div>
+      <div class="vid-grid">
+        <div class="vid"><video controls preload="metadata" playsinline poster="video/poster.jpg"><source src="video/loomeys-audit.mp4" type="video/mp4">Your browser can't play this video.</video></div>
+        <div class="takeaways">
+          <h3>The short version</h3>
+          <ul>
+            <li><i class="fa-solid fa-circle-check ok"></i><span>#1 across all of Orange County for <b>gift wrapping</b> and <b>kids' birthday gifts</b></span></li>
+            <li><i class="fa-solid fa-circle-check ok"></i><span>#2 everywhere for <b>toy store laguna beach</b>, behind Main Beach Toys &amp; Games</span></li>
+            <li><i class="fa-solid fa-triangle-exclamation warn"></i><span>"Toy store near me" and "best toy store orange county" only rank close to the shop</span></li>
+            <li><i class="fa-solid fa-circle-xmark bad"></i><span>Not in the top 20 for <b>beach toys</b> or <b>toy store dana point</b></span></li>
+            <li><i class="fa-solid fa-circle-check ok"></i><span>Named #1 whenever AI mentions a Laguna toy store, but Perplexity never names it</span></li>
+            <li><i class="fa-solid fa-wrench warn"></i><span>Website is missing meta descriptions, local schema and image alt text</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="maps">
+    <div class="wrap">
+      <div class="label"><i class="fa-solid fa-map-location-dot"></i> 01 · Google Maps</div>
+      <h2>Where Loomey's ranks in Google Maps</h2>
+      <p class="lead">We searched 12 keywords from 31 points spread from Huntington Beach to San Clemente. Each dot is one search location, and the number is where Loomey's Toys showed up in the map results there.</p>
+      <div class="divider"></div>
+
+      <div class="gbp">
+        <div class="gbp-card">
+          <div class="gbp-head"><i class="fa-solid fa-location-dot"></i><div><h3>Loomey's Toys · Laguna Beach</h3><small>Google Business Profile</small></div></div>
+          <div class="gbp-rating"><b>4.7</b><span class="stars">★★★★★</span><span>22 Google reviews</span></div>
+          <ul>
+            <li><i class="fa-solid fa-map"></i>381 Forest Ave #100A, Laguna Beach, CA 92651</li>
+            <li><i class="fa-solid fa-phone"></i>(949) 715-8180</li>
+            <li><i class="fa-solid fa-camera"></i>13 photos on the profile</li>
+          </ul>
+          <a class="btn ghost" href="https://maps.app.goo.gl/us1KkSnWtQ4hEhB76" target="_blank" rel="noopener">View on Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="panel">
+          <h4>Profile photos vs. nearby toy stores</h4>
+          <div id="photos"></div>
+          <p class="note">Photo counts from the Nov 17 scan. Profiles with more photos look more active to Google and get more clicks.</p>
+        </div>
+      </div>
+
+      <div class="legend">
+        <span><span class="sw" style="background:var(--top3)"></span><b>1–3</b> in the map pack</span>
+        <span><span class="sw" style="background:var(--mid)"></span><b>4–20</b> below the fold</span>
+        <span><span class="sw" style="background:#64748b"></span><b>21+</b> not ranking</span>
+        <span><i class="fa-solid fa-expand" style="color:var(--dolphin)"></i>&nbsp; Click a map to enlarge</span>
+      </div>
+
+      <div class="subhead" style="margin-top:0"><h3><i class="fa-solid fa-trophy"></i>Winning</h3><p>Top 3 on almost every grid point</p></div>
+      <div class="maps" id="maps-win"></div>
+      <div class="subhead"><h3><i class="fa-solid fa-arrow-trend-up"></i>Room to grow</h3><p>Only ranks close to the shop, or not at all</p></div>
+      <div class="maps" id="maps-grow"></div>
+
+      <div class="subhead"><h3><i class="fa-solid fa-list-check"></i>Google Maps tips</h3><p>In order of impact</p></div>
+      <div class="tips">
+        <div class="tip"><div class="n">1</div><div><h4>Add 50+ photos, then a few every week <span class="prio hi">High</span></h4><p>Loomey's has <b>13 photos</b>. Main Beach Toys has 69, Little Freebirds 127, Engine Ear Toys 365. Add the storefront, the inside of the shop, gift wrapping, shelves by category (beach, pool, LEGO, baby) and staff.</p></div></div>
+        <div class="tip"><div class="n">2</div><div><h4>Ask every happy customer for a review <span class="prio hi">High</span></h4><p>22 reviews is fewer than most competitors. Use a QR code at the register and a link on gift receipts. Reviews that mention things like "beach toys" or "baby gifts" help those searches.</p></div></div>
+        <div class="tip"><div class="n">3</div><div><h4>Add categories and products for the gaps <span class="prio hi">High</span></h4><p>Not ranking for <b>beach toys</b> and barely ranking for <b>LEGO</b>. Add secondary categories (Baby store, Gift shop, Educational supply store) and Products on the profile for beach toys, pool toys, LEGO and baby gifts.</p></div></div>
+        <div class="tip"><div class="n">4</div><div><h4>Post weekly on the profile <span class="prio">Medium</span></h4><p>New arrivals, holiday gift guides, events and the Palisades reopening. Regular posts tell Google the shop is active and give searchers a reason to click.</p></div></div>
+        <div class="tip"><div class="n">5</div><div><h4>Fill in every attribute and Q&amp;A <span class="prio">Medium</span></h4><p>Gift wrapping, curbside pickup, personal shopping and women-owned. Add your own Q&amp;A answers, like "Do you gift wrap?" and "Do you carry LEGO?"</p></div></div>
+        <div class="tip"><div class="n">6</div><div><h4>Set up the Palisades Village profile <span class="prio">Medium</span></h4><p>Claim and verify a separate profile for the reopened Palisades store, with its own photos, hours and reviews. It will be a different market with different competitors.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="ai">
+    <div class="wrap">
+      <div class="label"><i class="fa-solid fa-wand-magic-sparkles"></i> 02 · AI Search</div>
+      <h2>What ChatGPT, Google AI &amp; others say</h2>
+      <p class="lead">We asked five AI engines 10 questions families ask when shopping for toys in Laguna Beach and the Palisades. Loomey's came up in <b>19 of 50 answers</b>, and every time it did, it was named first.</p>
+      <div class="divider"></div>
+      <div class="aiv-kpis">
+        <div class="aiv"><div class="v">38%</div><div class="l">Visibility<small>named in 19 of 50 answers</small></div></div>
+        <div class="aiv"><div class="v">8<small>/10</small></div><div class="l">Questions covered<small>at least one engine names Loomey's</small></div></div>
+        <div class="aiv"><div class="v">#1</div><div class="l">Position when named<small>first in all 19 answers</small></div></div>
+        <div class="aiv"><div class="v">48%</div><div class="l">Cited as a source<small>24 answers link to loomeystoys.com</small></div></div>
+      </div>
+      <div class="two">
+        <div class="panel"><h4>By AI engine</h4><div id="engines"></div><p class="note">Gemini links to the site 7 times but names the store only once. Perplexity never names it.</p></div>
+        <div class="panel"><h4>Sites AI cites for these questions</h4><div id="cites"></div><p class="note">Palisades Village's own site and local directories are cited often. Being listed on them helps.</p></div>
+      </div>
+      <div class="panel" style="margin-top:18px">
+        <h4>Question by question</h4>
+        <div class="tbl-wrap"><table class="t">
+          <thead><tr><th>Question</th><th>ChatGPT</th><th>Gemini</th><th>Claude</th><th>Perplexity</th><th>Google AI</th><th>Named</th></tr></thead>
+          <tbody id="prompts"></tbody>
+        </table></div>
+        <p class="note"><span class="chip hit">#1</span> named &nbsp; <span class="chip cite">#1 · cited</span> named and linked to loomeystoys.com</p>
+        <a class="btn" style="margin-top:14px" href="loomeys-ai-visibility-report.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> Full AI Visibility Report (PDF)</a>
+      </div>
+
+      <div class="subhead"><h3><i class="fa-solid fa-list-check"></i>AI search tips</h3><p>Get named in more answers</p></div>
+      <div class="tips">
+        <div class="tip"><div class="n">1</div><div><h4>Create a "Curated Gift Boxes" page <span class="prio hi">High</span></h4><p>No engine named Loomey's for <b>custom gift boxes in Laguna Beach</b> (0 of 5). A page that explains the service, price range, how to order and delivery area gives AI something to cite.</p></div></div>
+        <div class="tip"><div class="n">2</div><div><h4>Give each store its own page <span class="prio hi">High</span></h4><p>The Laguna Beach and Palisades Village stores share one Locations page. Separate pages with the address, hours, brands carried and neighborhood details help AI answer "near Forest Ave" and "in Palisades Village" questions.</p></div></div>
+        <div class="tip"><div class="n">3</div><div><h4>Get listed where AI looks <span class="prio">Medium</span></h4><p>AI cited <b>palisadesvillageca.com</b> 17 times, plus Yelp, MapQuest, Yahoo Local, Pali Post and MomsLA. Keep those listings complete and pitch local parent blogs and gift guides.</p></div></div>
+        <div class="tip"><div class="n">4</div><div><h4>Name brands and an FAQ on the site <span class="prio">Medium</span></h4><p>Google AI was the only engine to name Loomey's for <b>NeeDoh and Palm Pals</b>. Listing popular brands in plain text, and an FAQ about gift wrapping, curbside pickup and ages, gives every engine more to match.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="website">
+    <div class="wrap">
+      <div class="label"><i class="fa-solid fa-laptop-code"></i> 03 · Website</div>
+      <h2>Website tips for loomeystoys.com</h2>
+      <p class="lead">These came from a review of the homepage and Locations page. Most of them can be changed in Shopify's settings without a developer.</p>
+      <div class="divider"></div>
+      <div class="checks">
+        <div class="check"><i class="fa-solid fa-circle-xmark bad"></i><div><h4>No meta description</h4><p class="now">Neither the homepage nor the Locations page has one, so Google writes its own snippet.</p></div><p class="fix"><b>Fix:</b> Shopify → Online Store → Preferences. For example: "Boutique toy store on Forest Ave in Laguna Beach. Thoughtfully curated toys and gifts, free gift wrapping and curbside pickup."</p></div>
+        <div class="check"><i class="fa-solid fa-circle-xmark bad"></i><div><h4>Homepage title repeats the name</h4><p class="now">The title reads <code>Loomey's Toys – Loomey's Toys</code>, with no mention of toys in Laguna Beach.</p></div><p class="fix"><b>Fix:</b> "Loomey's Toys | Toy Store in Laguna Beach &amp; Pacific Palisades"</p></div>
+        <div class="check"><i class="fa-solid fa-circle-xmark bad"></i><div><h4>No local business schema</h4><p class="now">The site only marks itself as an <code>Organization</code>. Google and AI can't read the address, hours or phone from the code.</p></div><p class="fix"><b>Fix:</b> Add <code>ToyStore</code> schema for each location with the address, hours, phone, geo coordinates and a link to the Google profile.</p></div>
+        <div class="check"><i class="fa-solid fa-triangle-exclamation warn"></i><div><h4>Missing image alt text</h4><p class="now">9 of 17 images on the homepage have no description.</p></div><p class="fix"><b>Fix:</b> Describe each image in plain words, like "Gift-wrapped toys at Loomey's Toys in Laguna Beach".</p></div>
+        <div class="check"><i class="fa-solid fa-triangle-exclamation warn"></i><div><h4>Heading doesn't say what or where</h4><p class="now">The main heading is "Discover a World of Wonder", which doesn't say toy store or Laguna Beach.</p></div><p class="fix"><b>Fix:</b> Keep the tagline and add a line under it: "Your neighborhood toy store in Laguna Beach and the Palisades".</p></div>
+        <div class="check"><i class="fa-solid fa-triangle-exclamation warn"></i><div><h4>Social preview says only "Loomey's Toys"</h4><p class="now">Links shared by text or social media show a one-line description.</p></div><p class="fix"><b>Fix:</b> Setting the meta description fixes this too. Also set a social sharing image of the storefront.</p></div>
+        <div class="check"><i class="fa-solid fa-lightbulb" style="color:var(--dolphin)"></i><div><h4>Add pages for the searches you're missing</h4><p class="now">Beach toys, LEGO, pool toys and baby gifts don't have their own pages.</p></div><p class="fix"><b>Fix:</b> Create a collection page for each, with a short intro that mentions Laguna Beach, so Maps and AI have a page to match.</p></div>
+      </div>
+      <p style="margin-top:22px"><a class="btn" href="loomeys-map-rankings.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> Full Google Maps Grid Report (PDF)</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/loomeys-logo.png" alt="Loomey's Toys" width="600" height="323">
+    <div>Heat maps are Google Maps grid scans from Nov 17, 2026. AI results from Nov 16, 2026. Rankings and AI answers change over time.</div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-h">
+  <div class="modal-inner">
+    <div class="modal-title"><h3 id="modal-h"></h3><button class="modal-close" aria-label="Close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button></div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// From the Nov 17, 2026 Local Search Grid Report (31-point grid)
+const MAPS = [
+  {kw:"toy store with gift wrapping laguna beach", avg:"1.0", t:31,m:0, n:0, solv:100, lead:"Loomey's Toys"},
+  {kw:"kids birthday gifts laguna beach",          avg:"1.0", t:31,m:0, n:0, solv:100, lead:"Loomey's Toys"},
+  {kw:"toy store laguna beach",                    avg:"2.0", t:31,m:0, n:0, solv:100, lead:"Main Beach Toys & Games"},
+  {kw:"educational toys laguna beach",             avg:"2.0", t:31,m:0, n:0, solv:100, lead:"Main Beach Toys & Games"},
+  {kw:"pool toys laguna beach",                    avg:"2.0", t:31,m:0, n:0, solv:100, lead:"Main Beach Toys & Games"},
+  {kw:"baby gifts laguna beach",                   avg:"3.2", t:26,m:5, n:0, solv:84,  lead:"Little Freebirds"},
+  {kw:"best toy store orange county",              avg:"10.8",t:4, m:22,n:5, solv:13,  lead:"Tiddlywinks Toys and Games"},
+  {kw:"toy store near me",                         avg:"13.7",t:3, m:17,n:11,solv:10,  lead:"Chrono Toys Mission Viejo"},
+  {kw:"toy store laguna niguel",                   avg:"19.4",t:1, m:2, n:28,solv:3,   lead:"Lala's Wee Loft"},
+  {kw:"lego sets laguna beach",                    avg:"19.8",t:2, m:0, n:29,solv:6,   lead:"Bricks & Minifigs Laguna Niguel"},
+  {kw:"beach toys laguna beach",                   avg:"21+", t:0, m:0, n:31,solv:0,   lead:"Main Beach Toys & Games"},
+  {kw:"toy store dana point",                      avg:"21+", t:0, m:0, n:31,solv:0,   lead:"Lala's Wee Loft"},
+];
+const slug = s => s.replace(/[^a-z0-9]+/gi,'-').toLowerCase();
+const pct = v => (v/31*100).toFixed(2)+'%';
+MAPS.forEach((d,i)=>{
+  const cls = d.t>=26 ? '' : d.t>0 ? ' mid' : ' bad';
+  const el = document.createElement('article');
+  el.className = 'mcard';
+  el.innerHTML = `<button class="shot" data-i="${i}" aria-label="Enlarge map for ${d.kw}"><img src="img/maps/${slug(d.kw)}.webp" alt="Google Maps grid scan for '${d.kw}': Loomey's Toys in the top 3 at ${d.t} of 31 points" loading="lazy"><span class="tag">Avg rank ${d.avg}</span></button>
+    <div class="mbody">
+      <div class="mtitle"><h3>${d.kw}</h3><span class="badge${cls}">${d.t} / 31</span></div>
+      <div class="stats">
+        <div class="stat"><div class="v">${d.t}<small>/31</small></div><div class="l">Top 3</div></div>
+        <div class="stat"><div class="v">${d.m}</div><div class="l">4–20</div></div>
+        <div class="stat"><div class="v">${d.n}</div><div class="l">Not ranking</div></div>
+      </div>
+      <div class="bar"><span style="width:${pct(d.t)};background:var(--top3)"></span><span style="width:${pct(d.m)};background:var(--mid)"></span><span style="width:${pct(d.n)};background:#64748b"></span></div>
+      <div class="leader">#1 in this search: <b>${d.lead}</b></div>
+    </div>`;
+  document.getElementById(i<6 ? 'maps-win' : 'maps-grow').appendChild(el);
+});
+
+const PHOTOS = [["Engine Ear Toys",365],["Bricks & Minifigs Laguna Niguel",349],["Chrono Toys Mission Viejo",227],["Little Freebirds",127],["Main Beach Toys & Games",69],["Lala's Wee Loft",9],["Loomey's Toys",13]];
+PHOTOS.sort((a,b)=>b[1]-a[1]);
+document.getElementById('photos').innerHTML = PHOTOS.map(([n,v])=>`<div class="row${n==="Loomey's Toys"?' me':''}"><span class="nm" title="${n}">${n}</span><div class="track"><span style="width:${Math.max(v/365*100,1.5)}%"></span></div><span class="n">${v}</span></div>`).join('');
+
+const ENG = [["ChatGPT",4],["Gemini",1],["Claude",7],["Perplexity",0],["Google AI Mode",7]];
+document.getElementById('engines').innerHTML = ENG.map(([n,h])=>`<div class="row"><span class="nm">${n}</span><div class="track"><span style="width:${h*10}%"></span></div><span class="n${h?'':' zero'}">${h}/10</span></div>`).join('');
+const CITES = [["loomeystoys.com",24],["palisadesvillageca.com",17],["google.com",10],["mapquest.com",8],["palipost.com",6],["yelp.com",5],["local.yahoo.com",5],["momsla.com",4]];
+document.getElementById('cites').innerHTML = CITES.map(([d,n])=>`<div class="row${d==='loomeystoys.com'?' me':''}"><span class="nm">${d}</span><div class="track"><span style="width:${n/24*100}%"></span></div><span class="n">${n}</span></div>`).join('');
+
+// 'h' = named, 'c' = named + cited, '' = not named. Order: ChatGPT, Gemini, Claude, Perplexity, Google AI
+const PROMPTS = [
+  ["What is the best boutique toy store in Laguna Beach?",                         ['c','','c','','c']],
+  ["Where can I buy kids' gifts in Palisades Village?",                             ['','','h','','c']],
+  ["Which toy stores in Laguna Beach offer complimentary gift wrapping and curbside pickup?", ['c','','c','','c']],
+  ["What are the best places to shop for children's birthday gifts in Pacific Palisades?",  ['','','h','','']],
+  ["Where can I find a neighborhood toy shop near Forest Ave in Laguna Beach?",     ['c','c','c','','c']],
+  ["Which local shops in Orange County sell NeeDoh, Palm Pals, and sensory toys?",  ['','','','','c']],
+  ["Is there an independent toy store in Pacific Palisades for babies and kids under 8?", ['c','','h','','c']],
+  ["What are the top-rated specialty toy stores on the Westside of Los Angeles?",   ['','','','','']],
+  ["Where can I get a custom curated gift box for a child's birthday in Laguna Beach?", ['','','','','']],
+  ["What kids' stores are open at Palisades Village in Pacific Palisades?",         ['','','h','','c']],
+];
+document.getElementById('prompts').innerHTML = PROMPTS.map(([q,r])=>{
+  const named = r.filter(Boolean).length;
+  return `<tr><td>${q}</td>${r.map(v=>`<td><span class="chip${v==='c'?' cite':v==='h'?' hit':''}">${v==='c'?'#1 · cited':v==='h'?'#1':'—'}</span></td>`).join('')}<td class="${named?'':'zero'}">${named}/5</td></tr>`;
+}).join('');
+
+// modal
+const modal = document.getElementById('modal'), mBody = document.getElementById('modal-body'), mH = document.getElementById('modal-h');
+function openModal(t, html){ mH.textContent = t; mBody.innerHTML = html; modal.classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModal(){ modal.classList.remove('open'); mBody.innerHTML=''; document.body.style.overflow=''; }
+modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+document.addEventListener('click', e=>{
+  const s = e.target.closest('.shot'); if(!s) return;
+  const d = MAPS[s.dataset.i];
+  openModal(`${d.kw} · avg rank ${d.avg}`, `<img src="img/maps/${slug(d.kw)}.webp" alt="Google Maps grid scan for '${d.kw}'">`);
+});
+</script>
+</body>
+</html>
