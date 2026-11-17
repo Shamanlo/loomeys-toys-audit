@@ -79,6 +79,31 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;margin:10px 0 12px;color:var(
 .vid-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:26px;align-items:start}
 .vid{background:#000;border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 50px -28px rgba(44,62,87,.55);border:1px solid var(--line)}
 .vid video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.vid-solo{max-width:960px}
+
+/* case study */
+.case-head{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:end;margin-bottom:24px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.fact{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.fact .v{font-family:Grandstander,sans-serif;font-size:26px;font-weight:700;color:var(--top3);line-height:1.1}
+.fact .l{font-size:12.5px;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chips span{display:inline-flex;align-items:center;gap:6px;background:var(--paper);border:1px solid var(--line);padding:5px 11px;border-radius:999px;font-size:13.5px;color:var(--muted)}
+.chips i{color:var(--dolphin)}
+.maps.four{grid-template-columns:repeat(4,1fr);gap:14px}
+.maps.four .shot{aspect-ratio:1200/1104}
+
+/* pricing */
+.price{display:grid;grid-template-columns:240px 1fr;gap:26px;align-items:center;background:var(--navy);color:#fff;border-radius:22px;padding:26px 28px;max-width:900px;margin:0 auto}
+.price .amt{text-align:center;border-right:1px solid rgba(255,255,255,.15);padding-right:20px}
+.price .amt small{display:block;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.price .amt b{display:block;font-family:Grandstander,sans-serif;font-size:52px;line-height:1.05;margin:6px 0 2px}
+.price .amt span{font-size:14px;color:rgba(255,255,255,.7)}
+.price ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 18px;font-size:14.5px}
+.price li{display:flex;gap:9px}
+.price li i{color:var(--gold);margin-top:4px}
+@media (max-width:1000px){.maps.four{grid-template-columns:repeat(2,1fr)}.case-head{grid-template-columns:1fr}}
+@media (max-width:700px){.price{grid-template-columns:1fr;padding:22px}.price .amt{border-right:0;border-bottom:1px solid rgba(255,255,255,.15);padding:0 0 16px}.price ul{grid-template-columns:1fr}.maps.four{grid-template-columns:1fr}}
 .takeaways{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
 .takeaways h3{font-size:20px;margin-bottom:12px}
 .takeaways ul{list-style:none;display:grid;gap:11px;font-size:15.5px}
@@ -257,20 +282,7 @@ footer img{height:50px;width:auto}
       <h2>Audit walkthrough</h2>
       <p class="lead">A short walkthrough of the findings below.</p>
       <div class="divider"></div>
-      <div class="vid-grid">
-        <div class="vid"><video controls preload="metadata" playsinline poster="video/poster.jpg"><source src="video/loomeys-audit.mp4" type="video/mp4">Your browser can't play this video.</video></div>
-        <div class="takeaways">
-          <h3>The short version</h3>
-          <ul>
-            <li><i class="fa-solid fa-circle-check ok"></i><span>#1 across all of Orange County for <b>gift wrapping</b> and <b>kids' birthday gifts</b></span></li>
-            <li><i class="fa-solid fa-circle-check ok"></i><span>#2 everywhere for <b>toy store laguna beach</b>, behind Main Beach Toys &amp; Games</span></li>
-            <li><i class="fa-solid fa-triangle-exclamation warn"></i><span>"Toy store near me" and "best toy store orange county" only rank close to the shop</span></li>
-            <li><i class="fa-solid fa-circle-xmark bad"></i><span>Not in the top 20 for <b>beach toys</b> or <b>toy store dana point</b></span></li>
-            <li><i class="fa-solid fa-circle-check ok"></i><span>Named #1 whenever AI mentions a Laguna toy store, but Perplexity never names it</span></li>
-            <li><i class="fa-solid fa-wrench warn"></i><span>Website is missing meta descriptions, local schema and image alt text</span></li>
-          </ul>
-        </div>
-      </div>
+      <div class="vid vid-solo"><video controls preload="metadata" playsinline poster="video/poster.jpg"><source src="video/loomeys-audit.mp4" type="video/mp4">Your browser can't play this video.</video></div>
     </div>
   </section>
 
@@ -377,6 +389,46 @@ footer img{height:50px;width:auto}
       <p style="margin-top:22px"><a class="btn" href="loomeys-map-rankings.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> Full Google Maps Grid Report (PDF)</a></p>
     </div>
   </section>
+
+  <section class="block alt" id="case-study">
+    <div class="wrap">
+      <div class="case-head">
+        <div>
+          <div class="label"><i class="fa-solid fa-trophy"></i> Case Study · Window Film</div>
+          <h2>MD Window Films</h2>
+          <p class="lead">A window film installer in Santa Monica, one of the most competitive local markets in the country. On its four strongest keywords, every one of the 35 grid points ranks in the top 3.</p>
+          <div class="chips">
+            <span><i class="fa-solid fa-location-dot"></i>Santa Monica, CA</span>
+            <span><i class="fa-solid fa-border-all"></i>35-point grid</span>
+            <span><i class="fa-solid fa-calendar"></i>Scanned Oct 16, 2026</span>
+          </div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="v">4 / 4</div><div class="l">keywords at 35/35 top 3</div></div>
+          <div class="fact"><div class="v">100%</div><div class="l">share of local voice</div></div>
+          <div class="fact"><div class="v">1.0</div><div class="l">best avg. rank</div></div>
+        </div>
+      </div>
+      <div class="maps four" id="md-maps"></div>
+    </div>
+  </section>
+
+  <section class="block" id="plan">
+    <div class="wrap">
+      <div class="price">
+        <div class="amt"><small>Local SEO</small><b>$2,000</b><span>per month</span></div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i>Website optimization for local search</li>
+          <li><i class="fa-solid fa-check"></i>Monthly analytics dashboard</li>
+          <li><i class="fa-solid fa-check"></i>Heat map rankings for both locations</li>
+          <li><i class="fa-solid fa-check"></i>Rank the new Palisades Google profile</li>
+          <li><i class="fa-solid fa-check"></i>AI search optimization</li>
+          <li><i class="fa-solid fa-check"></i>Google Business Profile management</li>
+          <li><i class="fa-solid fa-check"></i>Off-site SEO and local links</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -429,6 +481,23 @@ MAPS.forEach((d,i)=>{
   document.getElementById(i<6 ? 'maps-win' : 'maps-grow').appendChild(el);
 });
 
+const MD = [
+  {kw:"window security film santa monica",      slug:"window-security-film-santa-monica",      avg:"1.0"},
+  {kw:"window film santa monica",               slug:"window-film-santa-monica",               avg:"1.5"},
+  {kw:"solar window film santa monica",         slug:"solar-window-film-santa-monica",         avg:"1.6"},
+  {kw:"anti graffiti window film santa monica", slug:"anti-graffiti-window-film-santa-monica", avg:"1.9"},
+];
+MD.forEach((d,i)=>{
+  const el = document.createElement('article');
+  el.className = 'mcard';
+  el.innerHTML = `<button class="shot" data-md="${i}" aria-label="Enlarge map for ${d.kw}"><img src="img/md/${d.slug}.webp" alt="Google Maps grid scan for '${d.kw}': average rank ${d.avg}, 35 of 35 points in the top 3" loading="lazy"><span class="tag">Avg rank ${d.avg}</span></button>
+    <div class="mbody">
+      <div class="mtitle"><h3>${d.kw}</h3><span class="badge">35 / 35</span></div>
+      <div class="bar"><span style="width:100%;background:var(--top3)"></span></div>
+    </div>`;
+  document.getElementById('md-maps').appendChild(el);
+});
+
 const PHOTOS = [["Engine Ear Toys",365],["Bricks & Minifigs Laguna Niguel",349],["Chrono Toys Mission Viejo",227],["Little Freebirds",127],["Main Beach Toys & Games",69],["Lala's Wee Loft",9],["Loomey's Toys",13]];
 PHOTOS.sort((a,b)=>b[1]-a[1]);
 document.getElementById('photos').innerHTML = PHOTOS.map(([n,v])=>`<div class="row${n==="Loomey's Toys"?' me':''}"><span class="nm" title="${n}">${n}</span><div class="track"><span style="width:${Math.max(v/365*100,1.5)}%"></span></div><span class="n">${v}</span></div>`).join('');
@@ -464,6 +533,7 @@ modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 document.addEventListener('click', e=>{
   const s = e.target.closest('.shot'); if(!s) return;
+  if(s.dataset.md){ const m = MD[s.dataset.md]; openModal(`${m.kw} · avg rank ${m.avg}`, `<img src="img/md/${m.slug}.webp" alt="Google Maps grid scan for '${m.kw}'">`); return; }
   const d = MAPS[s.dataset.i];
   openModal(`${d.kw} · avg rank ${d.avg}`, `<img src="img/maps/${slug(d.kw)}.webp" alt="Google Maps grid scan for '${d.kw}'">`);
 });
